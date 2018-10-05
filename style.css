@@ -2,8 +2,7 @@
 
 
 body{
-    background: whitesmoke;  /* fallback for old browsers */
-
+    background: whitesmoke;  
     font-family: "Open Sans";
     color: #000;
 }
@@ -55,7 +54,6 @@ body{
     width: 80%;
 }
 
-/* Some difficulties with margin-top */
 .about-profile img{
     margin-top: 250px;  
     width: 100%;
@@ -112,6 +110,7 @@ body{
     justify-content: space-between;
 }
 
+/* responsive */
 
 @media only screen and (min-width: 768px) {
 
