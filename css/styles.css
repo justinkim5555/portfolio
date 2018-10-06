@@ -142,7 +142,6 @@ a{
     }
 
     .portfolio-project{
-        border: solid black 2px;
         flex: 40%;
     } 
 }
@@ -158,7 +157,7 @@ a{
     }
 
     .portfolio-project{
-        flex: 30%;
+        flex: 25%;
     }
 
     .about{
@@ -168,15 +167,11 @@ a{
     }
 
     .about-text{
-        border: solid black 2px;
         padding: 50px;
 
     }
 
-    .about-profile{
-        border: solid black 2px;
-
-    }
+ 
     .about-profile img{
         max-width: 600px;
     }
