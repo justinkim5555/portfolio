@@ -3,7 +3,7 @@
 
 body{
     background: whitesmoke;  
-    font-family: "Open Sans";
+    font-family: "Libre Baskerille";
     color: #000;
 }
 
@@ -143,6 +143,7 @@ a{
 
     .portfolio-project{
         flex: 40%;
+        align-self: flex-start;
     } 
 }
 
@@ -158,6 +159,7 @@ a{
 
     .portfolio-project{
         flex: 25%;
+        align-self: flex-start;
     }
 
     .about{
