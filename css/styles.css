@@ -145,6 +145,10 @@ a{
         flex: 40%;
         align-self: flex-start;
     } 
+
+    .footer a{
+        visibility: hidden;
+    }
 }
 
 
@@ -176,5 +180,9 @@ a{
  
     .about-profile img{
         max-width: 600px;
+    }
+
+    .footer a{
+        visibility: hidden;
     }
 }
