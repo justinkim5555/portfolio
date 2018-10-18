@@ -2,7 +2,7 @@
 
 
 body{
-    background: whitesmoke;  
+    background: whitesmoke;
     font-family: "Libre Baskerville";
     color: #000;
 }
@@ -48,7 +48,7 @@ a{
 
 .about-text{
     margin-top:20px;
-    width: 80%; 
+    width: 80%;
     text-align: center;
 }
 
@@ -57,7 +57,7 @@ a{
 }
 
 .about-profile img{
-    margin-top: 20px;  
+    margin-top: 20px;
     width: 100%;
     margin-bottom:20px;
     max-height: 300px;
@@ -106,10 +106,20 @@ a{
 }
 
 .footer{
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
 }
+
+.footer .right-footer{
+  visibility: hidden;
+}
+
+.footer .right-footer a:nth-child(1){
+  visibility: visible;
+}
+
 
 /* responsive media query */
 
@@ -133,7 +143,7 @@ a{
         flex-direction: row;
         flex-wrap: wrap;
     }
-    
+
 
 
     .portfolio h3{
@@ -144,11 +154,44 @@ a{
     .portfolio-project{
         flex: 40%;
         align-self: flex-start;
-    } 
-
-    .footer a{
-        visibility: hidden;
     }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer .right-footer{
+      display: flex;
+      flex-flow: row-wrap;
+      justify-content: flex-end;
+    }
+
+    .footer .right-footer a{
+      flex-direction: row-reverse;
+    }
+
+
+    .footer .right-footer a p{
+      align-self: flex-start;
+
+    }
+
+
+    .footer .right-footer a:nth-child(2),
+    .footer .right-footer a:nth-child(3),
+    .footer .right-footer a:nth-child(4){
+      visibility: visible;
+      margin-left: 10px;
+      margin-top: -4px;
+    }
+
+    .footer .right-footer a:nth-child(1){
+      visibility:hidden;
+    }
+
+
 }
 
 
@@ -177,12 +220,14 @@ a{
 
     }
 
- 
+
     .about-profile img{
         max-width: 600px;
     }
 
-    .footer a{
-        visibility: hidden;
-    }
+    /* .footer a:nth-last-of-type(2), .footer a:nth-last-of-type(3),.footer a:nth-last-of-type(4){
+        visibility: visible;
+        display: flex;
+        text-align: right;
+    } */
 }
